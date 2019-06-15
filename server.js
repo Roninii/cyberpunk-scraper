@@ -7,7 +7,6 @@ app.use(cors());
 
 app.get('/', async (req, res) => {
   const storeData = await getStoreData();
-  await console.log(storeData);
   res.json(storeData);
 });
 
